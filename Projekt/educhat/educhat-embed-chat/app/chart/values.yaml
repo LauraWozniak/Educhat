@@ -1,0 +1,11 @@
+openai:
+  apiKey: ""  #  Wird beim Installieren angegeben
+
+qdrant:
+  enabled: true
+  
+educhat:
+  replicas: 1
+  image:
+    repository: educhat
+    tag: latest

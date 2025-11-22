@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: educhat
+spec:
+  replicas: {{ .Values.educhat.replicas }}
+  selector:
+    matchLabels:
+      app: educhat
+  template:
+    metadata:
+      labels:
+        app: educhat
+    spec:
+      containers:
+      - name: educhat
+        image: "{{ .Values.educhat.image.repository }}:{{ .Values.educhat.image.tag }}"
+        envFrom:
+        - configMapRef:
+            name: educhat-config
+        - secretRef:
+            name: openai-secret
+        stdin: true
+        tty: true
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: educhat
+spec:
+  selector:
+    app: educhat
+  ports:
+  - port: 8000
+    targetPort: 8000

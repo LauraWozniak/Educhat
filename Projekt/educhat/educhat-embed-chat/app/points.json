@@ -1,0 +1,22 @@
+{
+  "points": [
+    {
+      "id": 2001,
+      "vector": [0.8, 0.7, 0.75,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+      ],
+      "payload": {
+        "title": "Umschulung - Berufliche Neuorientierung",
+        "content": "Mit der richtigen Umschulung haben Sie beste Chancen, im Beruf neu durchzustarten. Eine Umschulung bedeutet, einen neuen Beruf zu lernen mit allen erforderlichen Kenntnissen und Fähigkeiten.",
+        "tags": ["umschulung", "berufswechsel", "neuorientierung", "karriere"],
+        "topic": "Umschulung",
+        "type": "information"
+      }
+    }
+  ]
+}

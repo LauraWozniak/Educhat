@@ -12,7 +12,7 @@ EMBED_MODEL    = os.environ.get("EMBED_MODEL","text-embedding-3-small")
 MIN_SCORE      = float(os.environ.get("MIN_SCORE","0.7"))
 TOP_K          = int(os.environ.get("TOP_K","5"))
 
-BLOCK_WORDS = {"password","admin access","bypass","prompt injection"}
+BLOCK_WORDS = {"password","admin access","bypass","prompt injection","OpenAIKey","key"}
 
 app = FastAPI(title="educhat-embed-chat", version="1.0")
 
